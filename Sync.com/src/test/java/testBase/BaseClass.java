@@ -1,3 +1,4 @@
+
 package testBase;
 
 import java.io.File;
@@ -30,8 +31,8 @@ public class BaseClass {
 	@Parameters({ "browser" })
 	public void setup(String br) throws IOException {
 		
-		FileReader file=new FileReader("./src//test//resources//config.properties");
-		 p=new Properties();
+		FileReader file = new FileReader("./src//test//resources//config.properties");
+		 p = new Properties();
 		 p.load(file);
 		logger = LogManager.getLogger(this.getClass());
 		switch (br.toLowerCase()) {

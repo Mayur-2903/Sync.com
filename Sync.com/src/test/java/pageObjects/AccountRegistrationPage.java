@@ -6,67 +6,63 @@ import org.openqa.selenium.support.FindBy;
 
 public class AccountRegistrationPage extends BasePage {
 
-	public AccountRegistrationPage(WebDriver driver) {
-		super(driver);
-	}
+    @FindBy(id = Const.email_auth)
+    private WebElement txtUserEmail;
 
-	@FindBy(id = Const.email_auth)
-	WebElement txtUserEmail;
+    @FindBy(id = Const.password_auth)
+    private WebElement txtPassword;
 
-	@FindBy(id = Const.password_auth)
-	WebElement txtPassword;
+    @FindBy(id = Const.confirm_password_auth)
+    private WebElement txtConfirmPassword;
 
-	@FindBy(id = Const.confirm_password_auth)
-	WebElement txtConfirmPassword;
+    @FindBy(id = Const.forget_password_chk)
+    private WebElement chkForgetPassPolicy;
 
-	@FindBy(id = Const.forget_password_chk)
-	WebElement chkForgetPassPolicy;
+    @FindBy(id = Const.policy_chk)
+    private WebElement chkPolicy;
 
-	@FindBy(id = Const.policy_chk)
-	WebElement chkPolicy;
+    @FindBy(id = Const.create_account_btn)
+    private WebElement btnCreateFreeAccount;
 
-	@FindBy(id = Const.create_account_btn)
-	WebElement btnCreateFreeAccount;
+    @FindBy(xpath = Const.msgConfirmation)
+    private WebElement msgConfirmation;
 
-	@FindBy(xpath = Const.msgConfirmation)
-	WebElement msgConfirmation;
-	
-	@FindBy(xpath=Const.btnSignIn)
-	WebElement btnSignIn;
-	
+    @FindBy(xpath = Const.btnSignIn)
+    private WebElement btnSignIn;
 
-	public void setUserEmail(String Email) {
-		txtUserEmail.sendKeys(Email);
-	}
+    public AccountRegistrationPage(WebDriver driver) {
+        super(driver);
+    }
 
-	public void setPassword(String Pwd) {
-		txtPassword.sendKeys(Pwd);
-	}
+    public void setUserEmail(String email) {
+        txtUserEmail.sendKeys(email);
+    }
 
-	public void setConfirmPassword(String Pwd) {
-		txtConfirmPassword.sendKeys(Pwd);
-	}
+    public void setPassword(String pwd) {
+        txtPassword.sendKeys(pwd);
+    }
 
-	public void setForgetPassPolicy() {
-		chkForgetPassPolicy.click();
-	}
+    public void setConfirmPassword(String pwd) {
+        txtConfirmPassword.sendKeys(pwd);
+    }
 
-	public void setPolicy() {
-		chkPolicy.click();
-	}
+    public void setForgetPassPolicy() {
+        chkForgetPassPolicy.click();
+    }
 
-	public void clickContinue() {
-		btnCreateFreeAccount.click();
-	}
+    public void setPolicy() {
+        chkPolicy.click();
+    }
 
-	public boolean getConfirmationMsg() {
+    public void clickContinue() {
+        btnCreateFreeAccount.click();
+    }
 
-		return (msgConfirmation.isDisplayed());
+    public boolean getConfirmationMsg() {
+        return msgConfirmation.isDisplayed();
+    }
 
-	}
-	
-	public void clickSignIn() {
-		btnSignIn.click();
-	}
-
+    public void clickSignIn() {
+        btnSignIn.click();
+    }
 }
