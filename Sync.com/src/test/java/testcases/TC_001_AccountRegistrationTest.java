@@ -1,10 +1,10 @@
-package testCases; // Retaining original package name
+package testcases; // Retaining original package name
 
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-import pageObjects.AccountRegistrationPage;
-import testBase.BaseClass;
+import pageobjects.AccountRegistrationPage;
+import testbase.BaseClass;
 
 public class TC_001_AccountRegistrationTest extends BaseClass {
 	

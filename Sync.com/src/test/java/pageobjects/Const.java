@@ -1,4 +1,4 @@
-package pageObjects;
+package pageobjects;
 
 public class Const {
 	static final String email_auth = "signup_user";
