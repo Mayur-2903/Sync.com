@@ -8,7 +8,6 @@ import java.text.SimpleDateFormat;
 import java.time.Duration;
 import java.util.Date;
 import java.util.Properties;
-
 import org.apache.commons.lang3.RandomStringUtils;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
@@ -25,15 +24,15 @@ public class BaseClass {
 
 	static public WebDriver driver;
 	public Logger logger;
-    public Properties p;
+	public Properties p;
 
 	@BeforeClass
 	@Parameters({ "browser" })
 	public void setup(String br) throws IOException {
-		
+
 		FileReader file = new FileReader("./src//test//resources//config.properties");
-		 p = new Properties();
-		 p.load(file);
+		p = new Properties();
+		p.load(file);
 		logger = LogManager.getLogger(this.getClass());
 		switch (br.toLowerCase()) {
 		case "chrome":
@@ -70,22 +69,21 @@ public class BaseClass {
 	public String randomAlphaNumeric() {
 		String str = RandomStringUtils.randomAlphabetic(3);
 		String num = RandomStringUtils.randomNumeric(3);
-
 		return (str + "@" + num);
 	}
-	
+
 	public String captureScreen(String tname) throws IOException {
 
 		String timeStamp = new SimpleDateFormat("yyyyMMddhhmmss").format(new Date());
-				
+
 		TakesScreenshot takesScreenshot = (TakesScreenshot) driver;
 		File sourceFile = takesScreenshot.getScreenshotAs(OutputType.FILE);
-		
-		String targetFilePath=System.getProperty("user.dir")+"\\screenshots\\" + tname + "_" + timeStamp + ".png";
-		File targetFile=new File(targetFilePath);
-		
+
+		String targetFilePath = System.getProperty("user.dir") + "\\screenshots\\" + tname + "_" + timeStamp + ".png";
+		File targetFile = new File(targetFilePath);
+
 		sourceFile.renameTo(targetFile);
-			
+
 		return targetFilePath;
 
 	}

@@ -8,18 +8,30 @@ public class SyncPage extends BasePage {
 	public SyncPage(WebDriver driver) {
 		super(driver);
 	}
-	
-	@FindBy(id=Const.txtSync)
+
+	@FindBy(id = Const.txtSync)
 	WebElement txtSync;
-	
-	public boolean isSyncPageExists()   // MyAccount Page heading display status
-	{
+
+	@FindBy(xpath = Const.linkSignOut)
+	WebElement linkSignOut;
+
+	@FindBy(id = Const.btnSignOut)
+	WebElement btnSignOut;
+
+	public boolean isSyncPageExists() {
 		try {
 			return (txtSync.isDisplayed());
 		} catch (Exception e) {
 			return (false);
 		}
 	}
-	
+
+	public void clickSignOutLink() {
+		linkSignOut.click();
+	}
+
+	public void clickSignOutbtn() {
+		btnSignOut.click();
+	}
 
 }
