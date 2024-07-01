@@ -6,7 +6,7 @@ import org.testng.annotations.Test;
 import pageobjects.AccountRegistrationPage;
 import testbase.BaseClass;
 
-public class TC_001_AccountRegistrationTest extends BaseClass {
+public class TC001AccountRegistrationTest extends BaseClass {
 	
 	@Test
 	public void verify_account_registration() {

@@ -8,7 +8,7 @@ import pageobjects.LoginPage;
 import pageobjects.SyncPage;
 import testbase.BaseClass;
 
-public class TC_002_LoginTest extends BaseClass {
+public class TC002LoginTest extends BaseClass {
 	
 	@Test
 	public void verify_login() {
