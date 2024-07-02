@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Suite" class="navigator-link">
-              <span class="suite-name border-failed">Suite</span>
+              <span class="suite-name border-passed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -92,21 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods, 1 failed,   1 passed</span>
-                  </li>
-                  <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
-                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
-                    </span>
-                    <div class="method-list-content failed suite-Suite">
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="testcases.TC003LoginDDT" class="method navigator-link" hash-for-method="verifyLoginDDT(mkokare+123@sync.com, asdfg12345, Invalid)">verifyLoginDDT(mkokare+123@sync.com, asdfg12345, Invalid)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content failed suite-Suite -->
+                    <span class="method-stats">2 methods,   2 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -117,7 +103,12 @@
                     <div class="method-list-content passed suite-Suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="testcases.TC003LoginDDT" class="method navigator-link" hash-for-method="verifyLoginDDT(mkokare+123@sync.com, asdf1234, Valid)">verifyLoginDDT(mkokare+123@sync.com, asdf1234, Valid)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="testcases.TC004CreateAndDeleteFileTest" class="method navigator-link" hash-for-method="verifyCreateFile">verifyCreateFile</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.TC004CreateAndDeleteFileTest" class="method navigator-link" hash-for-method="verifyDeleteFile">verifyDeleteFile</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -132,47 +123,24 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
-          <div class="suite-Suite-class-failed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">testcases.TC003LoginDDT</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifyLoginDDT(mkokare+123@sync.com, asdfg12345, Invalid)">
-                  </a> <!-- verifyLoginDDT(mkokare+123@sync.com, asdfg12345, Invalid) -->
-                  <span class="method-name">verifyLoginDDT</span>
-                  <span class="parameters">(mkokare+123@sync.com,asdfg12345,Invalid)</span>
-                  <div class="stack-trace">java.lang.AssertionError: An exception occurred: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[@class=&apos;link-to-cp nav-link&apos;]&quot;}
-  (Session info: chrome=126.0.6478.127)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: &apos;4.20.0&apos;, revision: &apos;866c76ca80&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;22.0.1&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [b9625daa9311afae2c16c41988d681f9, findElement {value=//a[@class=&apos;link-to-cp nav-link&apos;], using=xpath}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.127, chrome: {chromedriverVersion: 125.0.6422.76 (67dcf7562b8f..., userDataDir: C:\Users\mkokare\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52310}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52310/devtoo..., se:cdpVersion: 126.0.6478.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: b9625daa9311afae2c16c41988d681f9
-	at testcases.TC003LoginDDT.verifyLoginDDT(TC003LoginDDT.java:48)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-... Removed 26 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-failed -->
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">testcases.TC003LoginDDT</span>
+              <span class="class-name">testcases.TC004CreateAndDeleteFileTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="verifyLoginDDT(mkokare+123@sync.com, asdf1234, Valid)">
-                  </a> <!-- verifyLoginDDT(mkokare+123@sync.com, asdf1234, Valid) -->
-                  <span class="method-name">verifyLoginDDT</span>
-                  <span class="parameters">(mkokare+123@sync.com,asdf1234,Valid)</span>
+                  <a name="verifyCreateFile">
+                  </a> <!-- verifyCreateFile -->
+                  <span class="method-name">verifyCreateFile</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyDeleteFile">
+                  </a> <!-- verifyDeleteFile -->
+                  <span class="method-name">verifyDeleteFile</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -193,7 +161,7 @@ Session ID: b9625daa9311afae2c16c41988d681f9
   &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot;&gt;
     &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;testcases.TC003LoginDDT&quot;/&gt;
+      &lt;class name=&quot;testcases.TC004CreateAndDeleteFileTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Test --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
@@ -235,18 +203,18 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(2);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'verifyLoginDDT')
-data.setCell(0, 2, 'testcases.TC003LoginDDT')
-data.setCell(0, 3, 10058);
+data.setCell(0, 1, 'verifyCreateFile')
+data.setCell(0, 2, 'testcases.TC004CreateAndDeleteFileTest')
+data.setCell(0, 3, 43133);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'verifyLoginDDT')
-data.setCell(1, 2, 'testcases.TC003LoginDDT')
-data.setCell(1, 3, 9812);
+data.setCell(1, 1, 'verifyDeleteFile')
+data.setCell(1, 2, 'testcases.TC004CreateAndDeleteFileTest')
+data.setCell(1, 3, 10614);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 19 seconds</span>
+              <span class="suite-total-time">Total running time: 53 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -272,24 +240,22 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">testcases.TC003LoginDDT</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">testcases.TC004CreateAndDeleteFileTest</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">setup(chrome)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
-                <span class="method-name">verifyLoginDDT(mkokare+123@sync.com, asdf1234, Valid)</span>
-                <span class="method-start">6713 ms</span>
+                <span class="method-name">verifyCreateFile</span>
+                <span class="method-start">15986 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">verifyLoginDDT(mkokare+123@sync.com, asdfg12345, Invalid)</span>
-                <span class="method-start">16537 ms</span>
+                <span class="method-name">verifyDeleteFile</span>
+                <span class="method-start">59145 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">26746 ms</span>
+                <span class="method-start">69763 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

@@ -6,22 +6,22 @@ import org.openqa.selenium.support.FindBy;
 
 public class AccountRegistrationPage extends BasePage {
 
-	@FindBy(id = Const.email_auth)
+	@FindBy(id = Const.txtEmail)
 	private WebElement txtUserEmail;
 
-	@FindBy(id = Const.password_auth)
+	@FindBy(id = Const.txtPassword)
 	private WebElement txtPassword;
 
-	@FindBy(id = Const.confirm_password_auth)
+	@FindBy(id = Const.txtConfirmPassword)
 	private WebElement txtConfirmPassword;
 
-	@FindBy(id = Const.forget_password_chk)
+	@FindBy(id = Const.chkForgetPassword)
 	private WebElement chkForgetPassPolicy;
 
-	@FindBy(id = Const.policy_chk)
+	@FindBy(id = Const.chkPolicy)
 	private WebElement chkPolicy;
 
-	@FindBy(id = Const.create_account_btn)
+	@FindBy(id = Const.btnCreateAccount)
 	private WebElement btnCreateFreeAccount;
 
 	@FindBy(xpath = Const.msgConfirmation)

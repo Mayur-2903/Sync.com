@@ -34,8 +34,8 @@ public class ExtentReportManager implements ITestListener {
 		repName = "Test-Report-" + timeStamp + ".html";
 		sparkReporter = new ExtentSparkReporter(".\\reports\\" + repName);
 
-		sparkReporter.config().setDocumentTitle("opencart Automation Report");
-		sparkReporter.config().setReportName("opencart Functional Testing");
+		sparkReporter.config().setDocumentTitle("Sync Automation Report");
+		sparkReporter.config().setReportName("Sync Functional Testing");
 		sparkReporter.config().setTheme(Theme.DARK);
 
 		extent = new ExtentReports();

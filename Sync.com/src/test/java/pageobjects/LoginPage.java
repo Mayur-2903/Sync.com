@@ -10,13 +10,13 @@ public class LoginPage extends BasePage {
 		super(driver);
 	}
 
-	@FindBy(id = Const.userid)
+	@FindBy(id = Const.txtUserId)
 	private WebElement txtUserID;
 
-	@FindBy(id = Const.userpassword)
+	@FindBy(id = Const.txtUserPassword)
 	private WebElement txtUserPassword;
 
-	@FindBy(id = Const.loginbtn)
+	@FindBy(id = Const.btnlogin)
 	private WebElement btnLogin;
 
 	public void setUserId(String userId) {
