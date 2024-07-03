@@ -7,13 +7,13 @@
   <test thread-count="5" name="Test(failed)">
     <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="testcases.TC004CreateAndDeleteFileTest">
+      <class name="testcases.TC003LoginDDT">
         <methods>
-          <include name="verifyDeleteFile"/>
           <include name="tearDown"/>
+          <include name="verifyLoginDDT" invocation-numbers="1"/>
           <include name="setup"/>
         </methods>
-      </class> <!-- testcases.TC004CreateAndDeleteFileTest -->
+      </class> <!-- testcases.TC003LoginDDT -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
