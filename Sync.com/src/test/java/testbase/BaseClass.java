@@ -72,20 +72,29 @@ public class BaseClass {
 		return (str + "@" + num);
 	}
 
-	public String captureScreen(String tname) throws IOException {
+	 public String captureScreen(String tname) throws IOException {
+	        String timeStamp = new SimpleDateFormat("yyyyMMddhhmmss").format(new Date());
+	        TakesScreenshot takesScreenshot = (TakesScreenshot) driver;
+	        File sourceFile = takesScreenshot.getScreenshotAs(OutputType.FILE);
 
-		String timeStamp = new SimpleDateFormat("yyyyMMddhhmmss").format(new Date());
+	        // Get the Jenkins build number
+	        String buildNumber = System.getenv("BUILD_NUMBER");
 
-		TakesScreenshot takesScreenshot = (TakesScreenshot) driver;
-		File sourceFile = takesScreenshot.getScreenshotAs(OutputType.FILE);
+	        // Create a directory for screenshots based on the build number
+	        String screenshotsDir = System.getProperty("user.dir") + File.separator + "screenshots" + File.separator + "build_" + buildNumber;
+	        File directory = new File(screenshotsDir);
+	        if (!directory.exists()) {
+	            directory.mkdirs(); // Create directories including any necessary but nonexistent parent directories
+	        }
 
-		String targetFilePath = System.getProperty("user.dir") + "\\screenshots\\" + tname + "_" + timeStamp + ".png";
-		File targetFile = new File(targetFilePath);
+	        // Construct the target file path
+	        String targetFilePath = screenshotsDir + File.separator + tname + "_" + timeStamp + ".png";
+	        File targetFile = new File(targetFilePath);
 
-		sourceFile.renameTo(targetFile);
+	        // Move the screenshot file to the target location
+	        sourceFile.renameTo(targetFile);
 
-		return targetFilePath;
-
-	}
+	        return targetFilePath;
+	 }
 
 }
