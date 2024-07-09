@@ -72,29 +72,21 @@ public class BaseClass {
 		return (str + "@" + num);
 	}
 
-	 public String captureScreen(String tname) throws IOException {
-	        String timeStamp = new SimpleDateFormat("yyyyMMddhhmmss").format(new Date());
-	        TakesScreenshot takesScreenshot = (TakesScreenshot) driver;
-	        File sourceFile = takesScreenshot.getScreenshotAs(OutputType.FILE);
-
-	        // Get the Jenkins build number
-	        String buildNumber = System.getenv("BUILD_NUMBER");
-
-	        // Create a directory for screenshots based on the build number
-	        String screenshotsDir = System.getProperty("user.dir") + File.separator + "screenshots" + File.separator + "build_" + buildNumber;
-	        File directory = new File(screenshotsDir);
-	        if (!directory.exists()) {
-	            directory.mkdirs(); // Create directories including any necessary but nonexistent parent directories
-	        }
-
-	        // Construct the target file path
-	        String targetFilePath = screenshotsDir + File.separator + tname + "_" + timeStamp + ".png";
-	        File targetFile = new File(targetFilePath);
-
-	        // Move the screenshot file to the target location
-	        sourceFile.renameTo(targetFile);
-
-	        return targetFilePath;
-	 }
+	public String captureScreen(String tname) throws IOException {
+		String timeStamp = new SimpleDateFormat("yyyyMMddhhmmss").format(new Date());
+		TakesScreenshot takesScreenshot = (TakesScreenshot) driver;
+		File sourceFile = takesScreenshot.getScreenshotAs(OutputType.FILE);
+		String buildNumber = System.getenv("BUILD_NUMBER");
+		String screenshotsDir = System.getProperty("user.dir") + File.separator + "screenshots" + File.separator
+				+ "build_" + buildNumber;
+		File directory = new File(screenshotsDir);
+		if (!directory.exists()) {
+			directory.mkdirs();
+		}
+		String targetFilePath = screenshotsDir + File.separator + tname + "_" + timeStamp + ".png";
+		File targetFile = new File(targetFilePath);
+		sourceFile.renameTo(targetFile);
+		return targetFilePath;
+	}
 
 }
