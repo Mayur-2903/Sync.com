@@ -2,12 +2,12 @@
 <testng-results ignored="0" total="6" passed="5" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-07-03T15:14:46 IST" name="Suite" finished-at="2024-07-03T15:19:26 IST" duration-ms="280209">
+  <suite started-at="2024-07-12T09:09:19 IST" name="Suite" finished-at="2024-07-12T09:13:15 IST" duration-ms="235251">
     <groups>
     </groups>
-    <test started-at="2024-07-03T15:14:46 IST" name="Test" finished-at="2024-07-03T15:19:26 IST" duration-ms="280209">
+    <test started-at="2024-07-12T09:09:19 IST" name="Test" finished-at="2024-07-12T09:13:15 IST" duration-ms="235251">
       <class name="testcases.TC001AccountRegistrationTest">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:testcases.TC001AccountRegistrationTest@5b529706]" started-at="2024-07-03T15:14:47 IST" name="setup" finished-at="2024-07-03T15:14:56 IST" duration-ms="9615" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:testcases.TC001AccountRegistrationTest@63fdab07]" started-at="2024-07-12T09:09:20 IST" name="setup" finished-at="2024-07-12T09:09:30 IST" duration-ms="10229" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,17 +18,17 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="verifyAccountRegistration()[pri:0, instance:testcases.TC001AccountRegistrationTest@5b529706]" started-at="2024-07-03T15:14:56 IST" name="verifyAccountRegistration" finished-at="2024-07-03T15:15:10 IST" duration-ms="13492" status="PASS">
+        <test-method signature="verifyAccountRegistration()[pri:0, instance:testcases.TC001AccountRegistrationTest@63fdab07]" started-at="2024-07-12T09:09:30 IST" name="verifyAccountRegistration" finished-at="2024-07-12T09:09:40 IST" duration-ms="9971" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyAccountRegistration -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.TC001AccountRegistrationTest@5b529706]" started-at="2024-07-03T15:15:10 IST" name="tearDown" finished-at="2024-07-03T15:15:11 IST" duration-ms="574" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.TC001AccountRegistrationTest@63fdab07]" started-at="2024-07-12T09:09:40 IST" name="tearDown" finished-at="2024-07-12T09:09:42 IST" duration-ms="1367" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- testcases.TC001AccountRegistrationTest -->
       <class name="testcases.TC003LoginDDT">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:testcases.TC003LoginDDT@74a6a609]" started-at="2024-07-03T15:15:47 IST" name="setup" finished-at="2024-07-03T15:15:55 IST" duration-ms="8018" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:testcases.TC003LoginDDT@5a411614]" started-at="2024-07-12T09:10:05 IST" name="setup" finished-at="2024-07-12T09:10:12 IST" duration-ms="7203" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -39,7 +39,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="verifyLoginDDT(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testcases.TC003LoginDDT@74a6a609]" started-at="2024-07-03T15:15:57 IST" name="verifyLoginDDT" data-provider="LoginData" finished-at="2024-07-03T15:16:18 IST" duration-ms="21270" status="PASS">
+        <test-method signature="verifyLoginDDT(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testcases.TC003LoginDDT@5a411614]" started-at="2024-07-12T09:10:13 IST" name="verifyLoginDDT" data-provider="LoginData" finished-at="2024-07-12T09:10:26 IST" duration-ms="13083" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -60,7 +60,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyLoginDDT -->
-        <test-method signature="verifyLoginDDT(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testcases.TC003LoginDDT@74a6a609]" started-at="2024-07-03T15:16:18 IST" name="verifyLoginDDT" data-provider="LoginData" finished-at="2024-07-03T15:18:18 IST" duration-ms="120096" status="FAIL">
+        <test-method signature="verifyLoginDDT(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testcases.TC003LoginDDT@5a411614]" started-at="2024-07-12T09:10:26 IST" name="verifyLoginDDT" data-provider="LoginData" finished-at="2024-07-12T09:12:27 IST" duration-ms="120100" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -86,9 +86,9 @@ For documentation on this error, please visit: https://www.selenium.dev/document
 Build info: version: '4.20.0', revision: '866c76ca80'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [2e64f20dc9e1016f2b83331494b3459d, findElement {value=//a[@class='link-to-cp nav-link'], using=xpath}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.127, chrome: {chromedriverVersion: 125.0.6422.76 (67dcf7562b8f..., userDataDir: C:\Users\mkokare\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50853}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50853/devtoo..., se:cdpVersion: 126.0.6478.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 2e64f20dc9e1016f2b83331494b3459d]]>
+Command: [c1ee59ac5a30b4f56fca4f3f9dcfa174, findElement {value=//a[@class='link-to-cp nav-link'], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.127, chrome: {chromedriverVersion: 125.0.6422.76 (67dcf7562b8f..., userDataDir: C:\Users\mkokare\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50379}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50379/devtoo..., se:cdpVersion: 126.0.6478.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: c1ee59ac5a30b4f56fca4f3f9dcfa174]]>
             </message>
             <full-stacktrace>
               <![CDATA[java.lang.AssertionError: An exception occurred: no such element: Unable to locate element: {"method":"xpath","selector":"//a[@class='link-to-cp nav-link']"}
@@ -97,9 +97,9 @@ For documentation on this error, please visit: https://www.selenium.dev/document
 Build info: version: '4.20.0', revision: '866c76ca80'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [2e64f20dc9e1016f2b83331494b3459d, findElement {value=//a[@class='link-to-cp nav-link'], using=xpath}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.127, chrome: {chromedriverVersion: 125.0.6422.76 (67dcf7562b8f..., userDataDir: C:\Users\mkokare\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50853}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50853/devtoo..., se:cdpVersion: 126.0.6478.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 2e64f20dc9e1016f2b83331494b3459d
+Command: [c1ee59ac5a30b4f56fca4f3f9dcfa174, findElement {value=//a[@class='link-to-cp nav-link'], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.127, chrome: {chromedriverVersion: 125.0.6422.76 (67dcf7562b8f..., userDataDir: C:\Users\mkokare\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50379}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50379/devtoo..., se:cdpVersion: 126.0.6478.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: c1ee59ac5a30b4f56fca4f3f9dcfa174
 at org.testng.Assert.fail(Assert.java:111)
 at testcases.TC003LoginDDT.verifyLoginDDT(TC003LoginDDT.java:48)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
@@ -134,13 +134,13 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyLoginDDT -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.TC003LoginDDT@74a6a609]" started-at="2024-07-03T15:18:19 IST" name="tearDown" finished-at="2024-07-03T15:18:19 IST" duration-ms="274" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.TC003LoginDDT@5a411614]" started-at="2024-07-12T09:12:27 IST" name="tearDown" finished-at="2024-07-12T09:12:27 IST" duration-ms="563" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- testcases.TC003LoginDDT -->
       <class name="testcases.TC002LoginTest">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:testcases.TC002LoginTest@3f390d63]" started-at="2024-07-03T15:15:11 IST" name="setup" finished-at="2024-07-03T15:15:21 IST" duration-ms="10588" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:testcases.TC002LoginTest@74a6a609]" started-at="2024-07-12T09:09:42 IST" name="setup" finished-at="2024-07-12T09:09:50 IST" duration-ms="7970" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -151,17 +151,17 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="verifyLogin()[pri:0, instance:testcases.TC002LoginTest@3f390d63]" started-at="2024-07-03T15:15:21 IST" name="verifyLogin" finished-at="2024-07-03T15:15:45 IST" duration-ms="23462" status="PASS">
+        <test-method signature="verifyLogin()[pri:0, instance:testcases.TC002LoginTest@74a6a609]" started-at="2024-07-12T09:09:50 IST" name="verifyLogin" finished-at="2024-07-12T09:10:04 IST" duration-ms="14181" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyLogin -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.TC002LoginTest@3f390d63]" started-at="2024-07-03T15:15:45 IST" name="tearDown" finished-at="2024-07-03T15:15:47 IST" duration-ms="2007" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.TC002LoginTest@74a6a609]" started-at="2024-07-12T09:10:04 IST" name="tearDown" finished-at="2024-07-12T09:10:05 IST" duration-ms="603" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- testcases.TC002LoginTest -->
       <class name="testcases.TC004CreateAndDeleteFileTest">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:testcases.TC004CreateAndDeleteFileTest@5a411614]" started-at="2024-07-03T15:18:19 IST" name="setup" finished-at="2024-07-03T15:18:39 IST" duration-ms="20240" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:testcases.TC004CreateAndDeleteFileTest@2374d36a]" started-at="2024-07-12T09:12:27 IST" name="setup" finished-at="2024-07-12T09:12:35 IST" duration-ms="8080" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -172,15 +172,15 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="verifyCreateFile()[pri:0, instance:testcases.TC004CreateAndDeleteFileTest@5a411614]" started-at="2024-07-03T15:18:39 IST" name="verifyCreateFile" finished-at="2024-07-03T15:19:15 IST" duration-ms="35829" status="PASS">
+        <test-method signature="verifyCreateFile()[pri:0, instance:testcases.TC004CreateAndDeleteFileTest@2374d36a]" started-at="2024-07-12T09:12:35 IST" name="verifyCreateFile" finished-at="2024-07-12T09:13:04 IST" duration-ms="28331" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyCreateFile -->
-        <test-method signature="verifyDeleteFile()[pri:0, instance:testcases.TC004CreateAndDeleteFileTest@5a411614]" started-at="2024-07-03T15:19:15 IST" name="verifyDeleteFile" finished-at="2024-07-03T15:19:26 IST" duration-ms="10601" status="PASS">
+        <test-method signature="verifyDeleteFile()[pri:0, instance:testcases.TC004CreateAndDeleteFileTest@2374d36a]" started-at="2024-07-12T09:13:04 IST" name="verifyDeleteFile" finished-at="2024-07-12T09:13:14 IST" duration-ms="10601" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyDeleteFile -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.TC004CreateAndDeleteFileTest@5a411614]" started-at="2024-07-03T15:19:26 IST" name="tearDown" finished-at="2024-07-03T15:19:26 IST" duration-ms="882" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.TC004CreateAndDeleteFileTest@2374d36a]" started-at="2024-07-12T09:13:14 IST" name="tearDown" finished-at="2024-07-12T09:13:15 IST" duration-ms="338" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
