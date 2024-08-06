@@ -1,15 +1,15 @@
-<suite name="Suite1">
+<suite name="Suite">
 
 	<listeners>
 		<listener class-name="utilities.ExtentReportManager" />
 	</listeners>
-	<test thread-count="5" name="TestGroup1">
+	<test thread-count="5" name="Test">
 		<parameter name="browser" value="chrome" />
 		<classes>
-			<class name="testcases.TC001AccountRegistrationTest.TestClass1" />
-			<class name="testcases.TC002LoginTest.TestClass2" /> 
-		    <!-- <class name="testcases.TC003LoginDDT" />  -->
-			<!-- <class name="testcases.TC004CreateAndDeleteFileTest" />  -->
+			<class name="testcases.TC001AccountRegistrationTest" />
+			<class name="testcases.TC002LoginTest" /> 
+		   <!-- <class name="testcases.TC003LoginDDT" /> -->
+		   <!-- <class name="testcases.TC004CreateAndDeleteFileTest" /> -->
 			
 		</classes>
 	</test>
