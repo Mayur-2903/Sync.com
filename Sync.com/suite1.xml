@@ -1,0 +1,18 @@
+<suite name="Suite1">
+
+	<listeners>
+		<listener class-name="utilities.ExtentReportManager" />
+	</listeners>
+	<test thread-count="5" name="TestGroup1">
+		<parameter name="browser" value="chrome" />
+		<classes>
+			<class name="testcases.TC001AccountRegistrationTest.TestClass1" />
+			<class name="testcases.TC002LoginTest.TestClass2" /> 
+		    <!-- <class name="testcases.TC003LoginDDT" />  -->
+			<!-- <class name="testcases.TC004CreateAndDeleteFileTest" />  -->
+			
+		</classes>
+	</test>
+	<!--  Test  -->
+</suite>
+<!--  Suite  -->
