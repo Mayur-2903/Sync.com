@@ -10,7 +10,7 @@
       <class name="testcases.TC003LoginDDT">
         <methods>
           <include name="tearDown"/>
-          <include name="verifyLoginDDT" invocation-numbers="1"/>
+          <include name="verifyLoginDDT"/>
           <include name="setup"/>
         </methods>
       </class> <!-- testcases.TC003LoginDDT -->
