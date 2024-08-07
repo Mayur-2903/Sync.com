@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="5" passed="4" failed="1" skipped="0">
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-07-12T14:45:49 IST" name="Suite" finished-at="2024-07-12T14:47:53 IST" duration-ms="123310">
+  <suite started-at="2024-08-07T16:02:05 IST" name="Suite" finished-at="2024-08-07T16:05:28 IST" duration-ms="203514">
     <groups>
     </groups>
-    <test started-at="2024-07-12T14:45:49 IST" name="Test" finished-at="2024-07-12T14:47:53 IST" duration-ms="123310">
+    <test started-at="2024-08-07T16:02:05 IST" name="Test" finished-at="2024-08-07T16:05:28 IST" duration-ms="203514">
       <class name="testcases.TC001AccountRegistrationTest">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:testcases.TC001AccountRegistrationTest@5b529706]" started-at="2024-07-12T14:45:50 IST" name="setup" finished-at="2024-07-12T14:46:01 IST" duration-ms="11140" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:testcases.TC001AccountRegistrationTest@736d6a5c]" started-at="2024-08-07T16:02:06 IST" name="setup" finished-at="2024-08-07T16:02:23 IST" duration-ms="16718" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,74 +18,17 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="verifyAccountRegistration()[pri:0, instance:testcases.TC001AccountRegistrationTest@5b529706]" started-at="2024-07-12T14:46:01 IST" name="verifyAccountRegistration" finished-at="2024-07-12T14:46:16 IST" duration-ms="14673" status="PASS">
+        <test-method signature="verifyAccountRegistration()[pri:0, instance:testcases.TC001AccountRegistrationTest@736d6a5c]" started-at="2024-08-07T16:02:23 IST" name="verifyAccountRegistration" finished-at="2024-08-07T16:02:48 IST" duration-ms="25154" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyAccountRegistration -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.TC001AccountRegistrationTest@5b529706]" started-at="2024-07-12T14:46:16 IST" name="tearDown" finished-at="2024-07-12T14:46:16 IST" duration-ms="501" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.TC001AccountRegistrationTest@736d6a5c]" started-at="2024-08-07T16:02:48 IST" name="tearDown" finished-at="2024-08-07T16:02:50 IST" duration-ms="1681" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- testcases.TC001AccountRegistrationTest -->
-      <class name="testcases.TC003LoginDDT">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:testcases.TC003LoginDDT@74a6a609]" started-at="2024-07-12T14:46:55 IST" name="setup" finished-at="2024-07-12T14:47:01 IST" duration-ms="6218" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="verifyLoginDDT(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testcases.TC003LoginDDT@74a6a609]" started-at="2024-07-12T14:47:01 IST" name="verifyLoginDDT" data-provider="LoginData" finished-at="2024-07-12T14:47:01 IST" duration-ms="0" status="FAIL">
-          <exception class="org.testng.TestNGException">
-            <message>
-              <![CDATA[
-Data Provider public java.lang.Object[][] utilities.DataProviders.getData() returned a null value]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.testng.TestNGException: 
-Data Provider public java.lang.Object[][] utilities.DataProviders.getData() returned a null value
-at org.testng.internal.invokers.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:159)
-at org.testng.internal.Parameters.handleParameters(Parameters.java:803)
-at org.testng.internal.Parameters.handleParameters(Parameters.java:728)
-at org.testng.internal.invokers.ParameterHandler.handleParameters(ParameterHandler.java:72)
-at org.testng.internal.invokers.ParameterHandler.createParameters(ParameterHandler.java:51)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:911)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-at org.testng.TestRunner.privateRun(TestRunner.java:848)
-at org.testng.TestRunner.run(TestRunner.java:621)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
-at org.testng.TestNG.runSuites(TestNG.java:1114)
-at org.testng.TestNG.run(TestNG.java:1082)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.testng.TestNGException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyLoginDDT -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.TC003LoginDDT@74a6a609]" started-at="2024-07-12T14:47:02 IST" name="tearDown" finished-at="2024-07-12T14:47:02 IST" duration-ms="553" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- testcases.TC003LoginDDT -->
       <class name="testcases.TC002LoginTest">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:testcases.TC002LoginTest@3f390d63]" started-at="2024-07-12T14:46:16 IST" name="setup" finished-at="2024-07-12T14:46:23 IST" duration-ms="6711" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:testcases.TC002LoginTest@1af687fe]" started-at="2024-08-07T16:02:50 IST" name="setup" finished-at="2024-08-07T16:02:58 IST" duration-ms="8502" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -96,17 +39,17 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="verifyLogin()[pri:0, instance:testcases.TC002LoginTest@3f390d63]" started-at="2024-07-12T14:46:23 IST" name="verifyLogin" finished-at="2024-07-12T14:46:55 IST" duration-ms="31514" status="PASS">
+        <test-method signature="verifyLogin()[pri:0, instance:testcases.TC002LoginTest@1af687fe]" started-at="2024-08-07T16:02:58 IST" name="verifyLogin" finished-at="2024-08-07T16:03:47 IST" duration-ms="48791" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyLogin -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.TC002LoginTest@3f390d63]" started-at="2024-07-12T14:46:55 IST" name="tearDown" finished-at="2024-07-12T14:46:55 IST" duration-ms="551" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.TC002LoginTest@1af687fe]" started-at="2024-08-07T16:03:47 IST" name="tearDown" finished-at="2024-08-07T16:03:50 IST" duration-ms="2889" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- testcases.TC002LoginTest -->
       <class name="testcases.TC004CreateAndDeleteFileTest">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:testcases.TC004CreateAndDeleteFileTest@5a411614]" started-at="2024-07-12T14:47:02 IST" name="setup" finished-at="2024-07-12T14:47:09 IST" duration-ms="6866" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:testcases.TC004CreateAndDeleteFileTest@14dda234]" started-at="2024-08-07T16:03:50 IST" name="setup" finished-at="2024-08-07T16:04:00 IST" duration-ms="10522" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -117,15 +60,15 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="verifyCreateFile()[pri:0, instance:testcases.TC004CreateAndDeleteFileTest@5a411614]" started-at="2024-07-12T14:47:09 IST" name="verifyCreateFile" finished-at="2024-07-12T14:47:42 IST" duration-ms="33179" status="PASS">
+        <test-method signature="verifyCreateFile()[pri:0, instance:testcases.TC004CreateAndDeleteFileTest@14dda234]" started-at="2024-08-07T16:04:00 IST" name="verifyCreateFile" finished-at="2024-08-07T16:05:15 IST" duration-ms="74455" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyCreateFile -->
-        <test-method signature="verifyDeleteFile()[pri:0, instance:testcases.TC004CreateAndDeleteFileTest@5a411614]" started-at="2024-07-12T14:47:42 IST" name="verifyDeleteFile" finished-at="2024-07-12T14:47:53 IST" duration-ms="10345" status="PASS">
+        <test-method signature="verifyDeleteFile()[pri:0, instance:testcases.TC004CreateAndDeleteFileTest@14dda234]" started-at="2024-08-07T16:05:15 IST" name="verifyDeleteFile" finished-at="2024-08-07T16:05:26 IST" duration-ms="11231" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyDeleteFile -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.TC004CreateAndDeleteFileTest@5a411614]" started-at="2024-07-12T14:47:53 IST" name="tearDown" finished-at="2024-07-12T14:47:53 IST" duration-ms="234" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.TC004CreateAndDeleteFileTest@14dda234]" started-at="2024-08-07T16:05:26 IST" name="tearDown" finished-at="2024-08-07T16:05:28 IST" duration-ms="2101" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
